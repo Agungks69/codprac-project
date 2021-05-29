@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILKOOM - Community Blog</title>
+    <link rel="shortcut icon" href="img/Capture.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <span class="d-none">ILKOOM</span>
+                <img src="img/logo.PNG" alt="Ilkoom Logo" class="main-logo d-none d-md-inline">
+                <img src="img/logo.PNG" alt="Ilkoom Logo" class="small-logo d-inline d-md-none">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link p-4 active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link p-4">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="article.html" class="nav-link p-4">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link p-4">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link p-4">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <header id="main-slide">
+        <div id="mySlide" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#mySlide" data-slide-to="0" class="active"></li>
+                <li data-target="#mySlide" data-slide-to="1"></li>
+                <li data-target="#mySlide" data-slide-to="2"></li>
+                <li data-target="#mySlide" data-slide-to="3"></li>
+            </ol>
+
+
+            <div class="carousel-inner text-white">
+                <div class="carousel-item active" id="slide1">
+                    <div class="container">
+                        <div class="d-none d-md-block">
+                            <h1 class="display-1 bg-info px-4 pb-2 d-inline-block">
+                                Get<strong> Inspired</strong>
+                            </h1>
+                        </div>
+                        <br>
+                        <p class="bg-dark px-2 pb-1 d-inline-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cum?
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" id="slide2">
+                    <div class="container">
+                        <div class="d-none d-md-block">
+                            <h1 class="display-1 bg-dark px-4 pb-2 d-inline-block">
+                                Take<strong> Action</strong>
+                            </h1>
+                        </div>
+                        <br>
+                        <p class="bg-info px-2 pb-1 d-inline-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cum?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="slide3">
+                    <div class="container">
+                        <div class="d-none d-md-block">
+                            <h1 class="display-1 bg-info px-4 pb-2 d-inline-block">
+                                Be<strong> Social</strong>
+                            </h1>
+                        </div>
+                        <br>
+                        <p class="bg-dark px-2 pb-1 d-inline-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cum?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="slide4">
+                    <div class="container">
+                        <div class="d-none d-md-block">
+                            <h1 class="display-1 bg-dark px-4 pb-2 d-inline-block">
+                                Find<strong> Stories</strong>
+                            </h1>
+                        </div>
+                        <br>
+                        <p class="bg-info px-2 pb-1 d-inline-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#mySlide" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a href="#mySlide" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+
+    <section id="showoff-1" class="text-muted py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/showoff1.jpg" class="img-fluid mb-3 img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <h2>Let's Build Community</h2>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae hic, molestiae
+                        nulla quasi explicabo cupiditate!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt ut minus accusantium neque.
+                        Aut, voluptas odio. Et, inventore facere, ex eveniet cupiditate libero, quo delectus nam quos
+                        sit tempore?.</p>
+                    <button class="btn btn-outline-info">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showoff-1" class="text-muted py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Find Solution for Every Problem</h2>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae hic, molestiae
+                        nulla quasi explicabo cupiditate!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt ut minus accusantium neque.
+                        Aut, voluptas odio. Et, inventore facere, ex eveniet cupiditate libero, quo delectus nam quos
+                        sit tempore?.</p>
+                    <button class="btn btn-outline-info">Learn More</button>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="img/showoff2.jpg" class="img-fluid mb-3 img-thumbnail">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="explore">
+        <div class="dark-overlay">
+            <div class="container ">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Explore</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sint ad
+                            necessitatibus minima nemo beatae consequuntur cum, odit omnis earum assumenda ut
+                            perferendis quidem adipisci ipsa molestiae! Cum quo, nulla perferendis impedit
+                            exercitationem error voluptas!</p>
+                        <button class="btn btn-outline-dark">Find Out More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Membership Levels</h1>
+                    <hr class="w-25 py-2">
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut sint excepturi
+                        obcaecati
+                        soluta voluptatum, accusantium dignissimos quia eos autem. Quam minus praesentium voluptatem,
+                        molestiae earum dolorum accusantium velit expedita. Mollitia.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center">
+                        <div class="card-header text-white bg-dark">
+                            <h4>Premium 1 Month</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-danger h5"><s>Rp 200.000</s></p>
+                            <h3 class="card-title"><strong>Rp. 150.000</strong></h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <hr>
+                            <ul class="fa-ul text-left">
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Site Activity
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Members Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Access to Groups Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Premium Online Course
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Online and Phone Support
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-info d-block">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center">
+                        <div class="card-header text-white bg-dark">
+                            <h4>Premium 6 Months</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-danger h5"><s>Rp 1.200.000</s></p>
+                            <h3 class="card-title"><strong>Rp. 750.000</strong></h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <hr>
+                            <ul class="fa-ul text-left">
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Site Activity
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Members Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Access to Groups Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Premium Online Course
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Online and Phone Support
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-info d-block">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center">
+                        <div class="card-header text-white bg-dark">
+                            <h4>Premium 1 Year</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-danger h5"><s>Rp 2.400.000</s></p>
+                            <h3 class="card-title"><strong>Rp. 1.300.000</strong></h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <hr>
+                            <ul class="fa-ul text-left">
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Site Activity
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>View Members Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Access to Groups Directory
+                                </li>
+                                <li class="mb-2">
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Premium Online Course
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fas fa-check-circle"></i>
+                                    </span>Online and Phone Support
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-info d-block">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Showcase -->
+    <section id="member-showcase" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Our Member</h1>
+                    <hr class="w-25">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, beatae.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <img src="img/member1.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member2.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member3.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member4.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member5.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member6.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member7.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member8.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member9.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member10.jpg" class="img-thumbnail rounded-circle m-2">
+                    <img src="img/member11.jpg" class="img-thumbnail rounded-circle m-2">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <button class="btn btn-outline-info mx-auto">View More Member</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Paid Membership Features</h1>
+                    <hr class="w-25">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-lock fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Restrict User Access</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-shield-alt fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Unlimited Membership</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-credit-card fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Popular Payment Gateways</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-laptop fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Greate User Interface</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-link fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Third Party Integration</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="mr-3 mt-1 text-info">
+                        <i class="fas fa-plus-square fa-2x fa-fw"></i>
+                    </div>
+                    <div>
+                        <h4>Tons of Add-ons</h4>
+                        <p class="text-muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa maxime fugit suscipit
+                            quisquam perferendis consequatur sequi dolores nemo odit dignissimos, quasi sit consequuntur
+                            qui animi itaque corrupti aliquam, veniam repellendus?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="py-5 bg-dark d-none text-white d-md-block text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-comment-dots fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Activity</p>
+                    <p class="h3"><strong>4,320</strong></p>
+                </div>
+
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-user fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Member</p>
+                    <p class="h3"><strong>1,890</strong></p>
+                </div>
+
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-user-circle fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Online</p>
+                    <p class="h3"><strong>540</strong></p>
+                </div>
+
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Groups</p>
+                    <p class="h3"><strong>890</strong></p>
+                </div>
+
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-list-alt fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Forums</p>
+                    <p class="h3"><strong>223</strong></p>
+                </div>
+
+                <div class="col-2">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-comments fa-3x"></i>
+                    </div>
+                    <p class="h5 mb-0">Topics</p>
+                    <p class="h3"><strong>5,397</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="member-list" class="py-5 bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Member List</h1>
+                    <hr class="w-25">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, recusandae?</p>
+                </div>
+            </div>
+
+            <div class="card-columns">
+                <div class="card">
+                    <img src="img/thumbnail1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <img src="img/membert1.jpg" alt="" class="rounded-circle img-thumbnail img-fluid">
+                        <h5 class="card-title">Diana Rahayu</h5>
+                        <ul class="fa-ul text-left">
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="far fa-clock"></i>
+                                </span>
+                                Join in November 2010
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-briefcase"></i>
+                                </span>
+                                CEO PT. Serba Jaya Sentosa
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                Bandung
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                dianarahayu@gmail.com
+                            </li>
+                        </ul>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nostrum!
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Last seen 2 minutes ago</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/thumbnail2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <img src="img/membert2.jpg" alt="" class="rounded-circle img-thumbnail img-fluid">
+                        <h5 class="card-title">Aulia Wulandari</h5>
+                        <ul class="fa-ul text-left">
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="far fa-clock"></i>
+                                </span>
+                                Join in June 2014
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-briefcase"></i>
+                                </span>
+                                Marketing Tokobaju.com
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                Pekanbaru
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                aulia_123@gmail.com
+                            </li>
+                        </ul>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nostrum!
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">online</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/thumbnail3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <img src="img/membert3.jpg" alt="" class="rounded-circle img-thumbnail img-fluid">
+                        <h5 class="card-title">Syaras Saryang Putri</h5>
+                        <ul class="fa-ul text-left">
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="far fa-clock"></i>
+                                </span>
+                                Join in December 2012
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-briefcase"></i>
+                                </span>
+                                Teknisi CV.Komputik Elektrik
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-home"></i>
+                                </span>
+                                Bekasi
+                            </li>
+                            <li class="mb-2">
+                                <span class="fa-li">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                syarassaryang@gmail.com
+                            </li>
+                        </ul>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, nostrum!
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">Last seen 10 minutes ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-left">
+                    <a href="index.html">
+                        <img src="img/logo.PNG" alt="" style="height: 60px;">
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio hic facere magni
+                        sunt error quia neque!</p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <p class="h5">Community</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Activity</a></li>
+                        <li><a href="#" class="text-white">Members</a></li>
+                        <li><a href="#" class="text-white">Groups</a></li>
+                        <li><a href="#" class="text-white">Forums</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <p class="h5">Our Services</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Our mission</a></li>
+                        <li><a href="#" class="text-white">Help/Contact Us</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Cookie Policy</a></li>
+                        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 text-center text-md-left">
+                    <p class="h5">Hubungi Kami</p>
+                    <div class="text-nowrap"><i class="fas fa-envelope fa-fw mr-3"></i>
+                        agung@ilkoom.com</div>
+                    <div class="text-nowrap"><i class="fas fa-phone fa-fw mr-3"></i>
+                        (021) 123456</div>
+                    <div class="text-nowrap"><i class="fas fa-globe fa-fw mr-3"></i>
+                        www.ilkoom.com</div>
+                </div>
+            </div>
+
+            <div class="row mt-3 mt-md-0">
+                <div class="col-md-3 mr-md-auto text-center text-md-left">
+                    <small>&copy; ILKOOM 2021</small>
+                </div>
+
+                <div class="col-md-3 text-center text-md-left">
+                    <div>
+                        <a href="#" class="text-white mr-2">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white mr-2">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white mr-2">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white mr-2">
+                            <i class="fab fa-google-plus fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white mr-2">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

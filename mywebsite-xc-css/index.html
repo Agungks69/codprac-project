@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mywebsite | The best, awesome website ever</title>
+    <style>
+        @media only screen and (min-width: 481px) and (max-width: 900px) {
+            .container {
+                width: 80%;
+                min-width: 660px;
+            }
+
+            .header a>img {
+                width: 50%;
+            }
+
+            .sidebar {
+                width: 28%;
+            }
+
+            .sidebar img {
+                width: 100%;
+            }
+
+            .main {
+                width: 70%;
+            }
+        }
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8;
+            font-family: Cambria, "Times New Roman", serif;
+        }
+
+        .container {
+            width: 80%;
+            min-width: 660px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 0 20px;
+            box-shadow: 1px 0px 15px, -1px 0px 15px;
+            overflow: hidden;
+        }
+
+        .header {
+            margin-bottom: 10px;
+        }
+
+        .header a>img {
+            float: right;
+            width: 50%;
+        }
+
+        .nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            clear: right;
+        }
+
+        .nav li a {
+            display: block;
+            float: left;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+
+        .sidebar {
+            clear: left;
+            float: left;
+            width: 25%;
+            margin-right: 2%;
+        }
+
+        .sidebar img {
+            width: 100%;
+        }
+
+        .sidebar ul {
+            margin: 5px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar li a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 15px;
+            color: white;
+            background-color: green;
+            border-bottom: 1px solid white;
+
+        }
+
+        h2 {
+            margin: 0 0 15px;
+            padding: 0;
+            text-shadow: 3px 3px 1px silver;
+        }
+
+        .main {
+            width: 73%;
+            float: left;
+
+        }
+
+        .article {
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            padding-bottom: 15px;
+        }
+
+        div.article:nth-last-child(1) {
+            border-bottom: none;
+
+        }
+
+        .article img {
+            height: 150px;
+            float: left;
+            padding: 10px 10px 0px 0;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .article img:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .article p {
+            margin: 0;
+        }
+
+        .footer {
+            float: left;
+            width: 100%;
+            margin-top: 25px;
+            border-top: 1px solid black;
+        }
+
+        .footer .copyright {
+            float: left;
+        }
+
+        .footer .infoweb {
+            float: right;
+        }
+
+        .infoweb a {
+            text-decoration: none;
+            color: green;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/mywebsite_logo.png" alt="logo_website">
+            <a href="iklan.html"><img src="image/ads_horizontal.png" alt="ads_horizontal"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">categories</a></li>
+                <li><a href="#">our product</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <img src="image/gambar4.jpg" alt="gambar_pemandangan">
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+            <img src="image/ads280.png" alt="ads_280">
+        </div>
+        <div class="main">
+            <div class="article">
+                <h2>Our Best Awesome Article #1</h2>
+                <img src="image/gambar1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis totam asperiores aut vero nostrum
+                    consequuntur est! Maxime blanditiis fugit velit dolore aspernatur repellendus voluptatem enim beatae
+                    quisquam? Laudantium, dolorum? Tempore!</p>
+            </div>
+            <div class="article">
+                <h2>Our Best Awesome Article #2</h2>
+                <img src="image/gambar2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis totam asperiores aut vero nostrum
+                    consequuntur est! Maxime blanditiis fugit velit dolore aspernatur repellendus voluptatem enim beatae
+                    quisquam? Laudantium, dolorum? Tempore!</p>
+            </div>
+            <div class="article">
+                <h2>Our Best Awesome Article #3</h2>
+                <img src="image/gambar3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis totam asperiores aut vero nostrum
+                    consequuntur est! Maxime blanditiis fugit velit dolore aspernatur repellendus voluptatem enim beatae
+                    quisquam? Laudantium, dolorum? Tempore!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copyright">Copyright Awesome Website 2015</p>
+            <p class="infoweb">
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term of Us</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

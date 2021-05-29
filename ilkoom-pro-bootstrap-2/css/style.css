@@ -1,0 +1,136 @@
+
+/* NAVBAR */
+
+#main-nav .nav-link {
+    border-bottom: 5px solid #343a40;
+    color: #e2e1e1;
+}
+
+#main-nav .nav-link:hover, #main-nav .active {
+    color: white;
+    border-bottom: 5px solid #117a8b;
+}
+
+.main-logo {
+    height: 100px;
+    margin-bottom: -70px;
+}
+
+.small-logo {
+    height: 60px;
+}
+
+
+
+/* Slide */
+
+#main-nav {
+    z-index: 1;
+}
+
+#main-slide .carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+#main-slide h1 {
+    margin-top: 50vh;
+}
+
+#slide1 {
+    background-image: url('../img/image1.jpg');
+}
+
+#slide2 {
+    background-image: url('../img/image2.jpg');
+}
+
+#slide3 {
+    background-image: url('../img/image3.jpg');
+}
+
+#slide4 {
+    background-image: url('../img/image4.jpg');
+}
+
+/* Explore */
+
+#explore {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../img/explore.jpg'); 
+}
+
+#explore .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* Member Showcase */
+
+#member-showcase img {
+    width: 100px;
+}
+
+#member-showcase img:hover {
+    filter: brightness(105%);
+}
+
+/* Member list */
+
+#member-list .card-body img {
+    width: 150px;
+    margin-top: -80px;
+}
+
+/* HEADER IMAGE - Untuk selain halaman home */
+
+.header-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 300px;
+}
+
+.header-image h1 {
+    margin-top: 120px;
+}
+
+/* HEADER IMAGE - Gambar untuk setiap halaman */
+
+#blog-header {
+    background-image: url('../img/blogheader.jpg');
+    background-position-y: -200px;
+}
+
+#article-header {
+    background-image: url('../img/article.jpg');
+    background-position-y: -200px;
+}
+
+#gallery-header {
+    background-image: url('../img/galleryheader.jpg');
+    background-position-y: -200px;
+}
+
+#login-header {
+    background-image: url('../img/loginheader.jpg');
+    background-position-y: -200px;
+}
+/* GALLERY IMAGE - untuk efek hover */
+
+#gallery img:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: .5s;
+}
