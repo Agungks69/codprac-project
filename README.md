@@ -1,6 +1,6 @@
 Here, I put all my workout results while I was learning web development.
 
-### CSS BASIC
+### CSS Basic
 * [mywebsite](https://agungks69.github.io/exercise-projects/mywebsite-xc-css/)
 ### Basic web development
 * [calculator](https://agungks69.github.io/exercise-projects/calculator-xc-webdasar/)
