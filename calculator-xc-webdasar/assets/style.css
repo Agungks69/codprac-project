@@ -21,15 +21,46 @@ body {
 
 .button {
   flex-basis: 25%;
-
-  font-size: 1.5em;
-  text-align: center;
-  padding: 40px;
   border: 1px solid black;
+  text-align: center;
+  font-size: 1.5em;
+
+  padding: 40px;
   background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
   cursor: pointer;
 }
 
 .double {
   flex-basis: 50%;
+}
+
+.display {
+  background-color: #363636;
+  padding: 10px 20px;
+  color: white;
+  font-size: 2em;
+  width: 100%;
+}
+
+.operator,
+.negative,
+.equals {
+  background: orange;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
 }
