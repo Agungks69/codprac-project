@@ -67,3 +67,158 @@ li {
 
 .graybold-text {
 }
+
+#welcome-sec {
+  padding: 2em;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#welcome-sec h1 {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#welcome-sec p {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#type-of-cake {
+  border: 1px solid black;
+  justify-content: center;
+}
+.type-card {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#about-sec {
+  border: 1px solid black;
+}
+
+#about-sec img {
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: 10px;
+}
+#about-sec .text-about {
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: 10px;
+  padding-top: 200px;
+}
+
+.text-about h1 {
+  border: 1px solid black;
+  padding: 20px 10px;
+}
+.text-about p {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#favorite-sec {
+  padding: 2em;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#favorite-sec h1 {
+  border: 1px solid black;
+  padding: 20px 10px;
+}
+
+#favorite-sec p {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.list-of-cake {
+  justify-content: center;
+}
+
+.cake-card {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#besel-sec {
+  border: 1px solid black;
+}
+
+#besel-sec img {
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#besel-sec .text-about {
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: 10px;
+  padding-top: 200px;
+}
+
+#subs-sec {
+  padding: 2em;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#subs-sec h1 {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#subs-sec p {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Custom subs text-box */
+.custom-search {
+  position: relative;
+  width: 300px;
+  margin: 2em auto;
+}
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-search-botton {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #d1095e;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+.footer-box {
+  flex-grow: 1;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+footer + p {
+  margin: 10px;
+}
