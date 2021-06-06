@@ -102,14 +102,6 @@ li a {
   font-size: 0.9em;
 }
 
-li a:link {
-  color: greenyellow;
-}
-
-li a:visited {
-  color: red;
-}
-
 /* =================== */
 
 /* ==== Login & register ==== */
@@ -134,14 +126,8 @@ li a:visited {
   padding-top: 10%;
 }
 
-#showcase img {
-  width: 50%;
-  height: 116%;
-}
-
 .text-showcase {
-  flex-basis: 60%;
-  padding: 4em 0 0 15em;
+  padding: 4em 0 0 10em;
 }
 
 .text-showcase h1 {
@@ -161,6 +147,10 @@ li a:visited {
 
 .buttons-header button:last-child {
   margin: 0 10px;
+}
+
+#showcase img {
+  width: 600px;
 }
 
 /* =================== */
