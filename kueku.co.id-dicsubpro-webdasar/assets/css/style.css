@@ -84,6 +84,10 @@ h5 {
   font-weight: bold;
 }
 
+strong {
+  font-weight: 500;
+}
+
 .type-card:hover,
 .card:hover {
   border: none;
@@ -471,6 +475,4 @@ hr {
   font-style: italic;
 }
 
-strong {
-  font-weight: 500;
-}
+/* =========================== */
