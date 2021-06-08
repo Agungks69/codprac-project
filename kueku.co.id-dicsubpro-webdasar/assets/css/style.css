@@ -95,6 +95,10 @@ strong {
   cursor: pointer;
 }
 
+.active-nav {
+  color: #fd7530;
+}
+
 /* =============== */
 
 /* ====
@@ -111,6 +115,20 @@ header {
   width: 100%;
   padding: 10px 0;
   z-index: 100;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fd7530;
 }
 
 /* ================ */
@@ -167,6 +185,7 @@ Login & register
   flex-grow: 1;
   text-align: center;
   margin: 10px;
+  transition: all 0.5s;
 }
 
 .login-button {
@@ -186,7 +205,7 @@ Showcase Header
 }
 
 .text-showcase {
-  padding: 4em 0 0 10em;
+  padding: 4em 0 0 12%;
 }
 
 .text-showcase h1 {
@@ -209,7 +228,7 @@ Showcase Header
 }
 
 #showcase img {
-  width: 600px;
+  width: 80%;
   margin-right: 50px;
 }
 
@@ -232,6 +251,7 @@ Welcome Web-Page Section
 
 #type-of-cake {
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .type-card {
@@ -303,10 +323,11 @@ Favourite section
 
 .list-of-cake {
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 15%;
+  flex-basis: 15%;
   height: 100%;
   margin: 10px;
   border: 1.5px solid rgba(253, 117, 48, 0.2);
@@ -416,6 +437,7 @@ Footer
 
 footer .flex-container {
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 10%;
 }
 
@@ -476,3 +498,118 @@ hr {
 }
 
 /* =========================== */
+
+/* ====
+Aside Profile
+==== */
+
+#sidebar {
+  position: fixed;
+  top: 140px;
+  right: -300px;
+  width: 300px;
+  height: 500px;
+  padding: 20px 0px 20px 20px;
+  background-image: url('../images/background-profile.png');
+  background-size: cover;
+  border: 1.5px solid rgba(253, 117, 48, 0.2);
+  transition: all 0.5s linear;
+  border-radius: 10px 0 0 10px;
+}
+#sidebar.active {
+  right: 0px;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  width: 50px;
+  padding: 10px 10px 10px 15px;
+  border-radius: 10px 0 0 10px;
+}
+
+#sidebar h3 {
+  writing-mode: vertical-lr;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#sidebar h1 {
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+.profile-content p {
+  padding: 5px 0;
+  color: #54a496;
+}
+
+.profile-content .profile-image {
+  width: 280px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.social-profile img {
+  width: 25px;
+  margin-bottom: 10px;
+}
+
+.social-profile {
+  position: absolute;
+  border: 0 1px 0 0;
+  padding: 20px 15px 5px 5px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: rgba(253, 117, 48, 0.2);
+  box-shadow: 2px 0px 15px -10px rgba(0, 0, 0, 0.3);
+  bottom: 0px;
+}
+/* ================== */
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-menu.active {
+  display: block;
+  position: absolute;
+  background-image: url('../images/background-profile.png');
+  background-size: cover;
+  top: 70px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 0;
+  background-color: white;
+  height: 150px;
+}
+.login-register.active {
+  display: block;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+}
+
+.nav-menu.active li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(253, 117, 48, 0.2);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}

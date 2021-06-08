@@ -9,14 +9,16 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <header id="home">
       <div class="main-header flex-container">
         <h3 id="logo"><span>Kueku</span>.co.id</h3>
+
         <nav>
-          <ul class="flex-container">
-            <li><a href="#home">Home</a></li>
+          <ul class="flex-container nav-menu">
+            <li><a href="#home" class="active-nav">Home</a></li>
             <li><a href="#about-sec">About</a></li>
             <li><a href="#favorite-sec">Menu</a></li>
           </ul>
@@ -24,6 +26,11 @@
         <div class="login-register">
           <button class="login-button">Log In</button>
           <button class="reg-button">Register</button>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </div>
       <section id="showcase" class="flex-container">
@@ -161,7 +168,24 @@
         </div>
       </section>
     </main>
-    <aside></aside>
+    <aside id="sidebar">
+      <div class="toggle-btn reg-button" onclick="toggleSidebar(this)">
+        <h3>About Me</h3>
+      </div>
+      <div class="profile-content">
+        <h1>Agung Kurniawan Syahferdi</h1>
+        <p class="graybold-text">Student, Web Enthusiast</p>
+        <p>Deli Serdang, Sumatera Utara</p>
+        <div class="social-profile">
+          <img src="assets/images/linkedin.svg" alt="" class="social-icon" />
+          <br />
+          <img src="assets/images/facebook.svg" alt="" class="social-icon" />
+          <br />
+          <img src="assets/images/instagram.svg" alt="" class="social-icon" />
+        </div>
+        <img src="assets/images/foto_profil.png" alt="" class="profile-image" />
+      </div>
+    </aside>
     <footer>
       <div class="flex-container">
         <div class="footer-box">
@@ -211,7 +235,7 @@
         </div>
       </div>
       <hr />
-      <p class="copy">Design Inspired by <strong> behance.net/riponpalbg99b7</strong></p>
+      <p class="copy">Design Inspired by <strong>behance.net/riponpalbg99b7</strong></p>
     </footer>
     <script src="assets/js/script.js"></script>
   </body>
