@@ -460,6 +460,11 @@ h3 ~ p {
   margin-top: 3em;
 }
 
+.footer-box .flex-container {
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
 .contact-text {
   flex-grow: 1;
   margin: 10px 0;
@@ -474,13 +479,11 @@ h3 ~ p {
 }
 
 .contact-icon {
+  flex-grow: 1;
   width: 25px;
   margin: 12px 10px 10px 0;
 }
 
-.footer-box .flex-container {
-  margin: 0;
-}
 footer + p {
   margin: 10px;
 }
