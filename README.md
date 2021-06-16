@@ -11,3 +11,4 @@ Here, I put all my workout results while I was learning web development.
 ### Website or Webapps
 * [calculator](https://agungks69.github.io/codprac-projects/calculator-xc-webdasar/)
 * [kueku.co.id](https://agungks69.github.io/codprac-projects/kueku.co.id-dicsubpro-webdasar/)
+* [todolist](https://agungks69.github.io/codprac-projects/todolist-xc-webfundamental/)
