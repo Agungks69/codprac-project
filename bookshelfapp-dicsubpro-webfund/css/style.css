@@ -82,6 +82,38 @@ h1 {
   width: 70%;
   text-align: right;
 }
+
+.book-card #remove-button,
+.book-card #edit-button,
+.book-card #remove-button:hover,
+.book-card #edit-button:hover {
+  position: absolute;
+  margin-left: 0.8em;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#remove-button {
+  background: url(../assets/trash.svg);
+}
+
+#remove-button:hover {
+  background: url(../assets/trash-hover.svg);
+}
+
+#edit-button {
+  margin-top: 3.5em;
+  background: url(../assets/pencil.svg);
+}
+
+#edit-button:hover {
+  background: url(../assets/pencil-hover.svg);
+}
+
 .void {
   font-size: 1.2em;
   color: #e5e5e5;
