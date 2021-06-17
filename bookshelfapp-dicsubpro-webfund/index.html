@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <h3>Bookshelf Apps</h3>
+      <input type="image" src="assets/plus.svg" alt="" width="45" id="add-button" />
+    </aside>
+    <main>
+      <input type="text" name="search" id="search" placeholder="Cari Buku" />
+      <div id="content">
+        <div class="book-list">
+          <h1>Belum Selesai Dibaca</h1>
+          <p class="void" hidden>Belum Ada Buku</p>
+
+          <div class="book-card">
+            <img src="assets/cover-book.jpg" alt="" width="167" height="250" />
+            <p id="book-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, qui!</p>
+            <p id="book-type">Novel</p>
+            <p id="author-and-release">J.K, Rowling, 2002</p>
+          </div>
+        </div>
+
+        <div class="book-list un">
+          <h1>Selesai Dibaca</h1>
+          <p class="void">Belum Ada Buku</p>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

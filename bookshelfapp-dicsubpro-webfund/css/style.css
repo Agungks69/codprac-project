@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  width: 1300px;
+}
+
+main {
+  flex-basis: 95%;
+  padding: 2em;
+}
+
+aside {
+  flex-basis: 5%;
+  height: 800px;
+  padding: 1em;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+h1 {
+  flex-basis: 100%;
+  padding-left: 0.5em;
+}
+
+#content {
+  display: flex;
+  padding-top: 2em;
+}
+
+#add-button {
+  margin-top: 2em;
+}
+
+.book-list {
+  flex-grow: 1;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.book-card {
+  flex-basis: 1;
+  background-color: #ffc972;
+  margin: 1em;
+  padding: 1em;
+  width: 240px;
+
+  border-radius: 15px;
+}
+
+.book-card p {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.2em 0;
+
+  line-height: 1em;
+}
+
+#book-title {
+  font-weight: 500;
+  height: 2em;
+}
+
+#author-and-release {
+  float: right;
+  width: 70%;
+  text-align: right;
+}
+.void {
+  font-size: 1.2em;
+  color: #e5e5e5;
+  margin: 1em auto;
+}
