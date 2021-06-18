@@ -2,12 +2,12 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
   display: flex;
   margin: 0;
-  font-family: 'Red Hat Display', sans-serif;
   width: 1300px;
 }
 
@@ -21,7 +21,18 @@ aside {
   height: 800px;
   padding: 1em;
   border-right: 1px solid #e5e5e5;
-  text-align: center;
+  text-align: left;
+}
+
+#add-button {
+  margin-left: 2em;
+}
+.add-edit-open {
+  flex-basis: 40%;
+}
+
+.rotate-add {
+  rotate: 45deg;
 }
 
 h3 {
@@ -32,11 +43,13 @@ h3 {
 h1 {
   flex-basis: 100%;
   padding-left: 0.5em;
+  font-weight: 500;
 }
 
 #content {
   display: flex;
   padding-top: 2em;
+  width: 100%;
 }
 
 #add-button {
@@ -50,16 +63,18 @@ h1 {
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 5px;
-  border: 1px solid #e5e5e5;
+}
+
+.book-list:nth-child(1) {
+  border-right: 1px solid #e5e5e5;
 }
 
 .book-card {
   flex-basis: 1;
-  background-color: #ffc972;
+  background-color: #b692fe;
   margin: 1em;
   padding: 1em;
   width: 240px;
-
   border-radius: 15px;
 }
 
@@ -67,20 +82,22 @@ h1 {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0.2em 0;
-
+  margin: 0;
   line-height: 1em;
 }
 
 #book-title {
   font-weight: 500;
+  width: 100%;
   height: 2em;
+  margin-top: 5px;
 }
 
 #author-and-release {
-  float: right;
-  width: 70%;
+  width: 100%;
   text-align: right;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .book-card #remove-button,
@@ -112,6 +129,76 @@ h1 {
 
 #edit-button:hover {
   background: url(../assets/pencil-hover.svg);
+}
+
+input[type='text'] {
+  border: 0;
+  outline: none;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+::placeholder {
+  color: #e5e5e5;
+  font-weight: 500;
+}
+
+#form-area {
+  text-align: center;
+}
+
+#form input[type='text'] {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 1.5em 0;
+  font-size: 1em;
+  width: 80%;
+}
+#form input[type='file'] {
+  margin: 1em;
+  margin-right: 20%;
+  padding: 10px;
+}
+label {
+  margin-right: 35%;
+  margin-bottom: 1em;
+  color: #e5e5e5;
+  font-weight: 500;
+}
+
+#add-edit-button {
+  width: 80%;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px #999;
+}
+
+#add-edit-button:hover {
+  background-color: #c3c3c3;
+}
+
+#add-edit-button:hover:active {
+  background-color: #c3c3c3;
+  box-shadow: 0px 0px;
+  transform: translateY(4px);
+}
+
+#form-area .bg-color-group {
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+#form-area .bg-color-opt {
+  display: inline-block;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  cursor: pointer;
 }
 
 .void {
