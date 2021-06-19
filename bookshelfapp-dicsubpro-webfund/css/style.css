@@ -76,6 +76,7 @@ h1 {
   padding: 1em;
   width: 240px;
   border-radius: 15px;
+  /* box-shadow: 0px 0px 10px 2px rgba(196, 196, 196, 0.75); */
 }
 
 .book-card p {
@@ -90,20 +91,19 @@ h1 {
   font-weight: 500;
   width: 100%;
   height: 2em;
+  margin-bottom: 20px;
   margin-top: 5px;
 }
 
 #author-and-release {
   width: 100%;
-  text-align: right;
-  padding: 10px;
-  padding-bottom: 0;
+  text-align: left;
 }
 
-.book-card #remove-button,
-.book-card #edit-button,
-.book-card #remove-button:hover,
-.book-card #edit-button:hover {
+.book-card .remove-button,
+.book-card .edit-button,
+.book-card .remove-button:hover,
+.book-card .edit-button:hover {
   position: absolute;
   margin-left: 0.8em;
   width: 35px;
@@ -114,20 +114,20 @@ h1 {
   background-repeat: no-repeat;
 }
 
-#remove-button {
+.remove-button {
   background: url(../assets/trash.svg);
 }
 
-#remove-button:hover {
+.remove-button:hover {
   background: url(../assets/trash-hover.svg);
 }
 
-#edit-button {
+.edit-button {
   margin-top: 3.5em;
   background: url(../assets/pencil.svg);
 }
 
-#edit-button:hover {
+.edit-button:hover {
   background: url(../assets/pencil-hover.svg);
 }
 
@@ -161,7 +161,7 @@ input[type='text'] {
 label {
   margin-right: 35%;
   margin-bottom: 1em;
-  color: #e5e5e5;
+  color: #666;
   font-weight: 500;
 }
 
@@ -177,6 +177,15 @@ label {
   box-shadow: 0 2px #999;
 }
 
+#form-area .finished-group {
+  text-align: left;
+  padding-left: 10%;
+  margin-bottom: 1em;
+}
+
+.finished-group label {
+  margin-right: 0;
+}
 #add-edit-button:hover {
   background-color: #c3c3c3;
 }
@@ -197,10 +206,12 @@ label {
   border-radius: 100%;
   width: 20px;
   height: 20px;
-  background-color: red;
   cursor: pointer;
 }
 
+.bg-color-opt-click {
+  border: 2px solid black;
+}
 .void {
   font-size: 1.2em;
   color: #e5e5e5;

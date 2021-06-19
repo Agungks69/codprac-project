@@ -1,45 +1,24 @@
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-function drag(ev) {
-  ev.target['todoId'] = 'pocong';
-  ev.dataTransfer.setData('text', ev.target.todoId);
-}
+const CARD_BGCOLOR = ['#8ecae6', '#219ebc', '#ffb703', '#fb8500', '#ee6c4d'];
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData('text');
-  let book = saveData(data);
-  ev.target.appendChild(book);
-}
+const bgColor = document.querySelectorAll('.bg-color-opt');
 
-function saveData(id) {
-  console.log(id);
-  const bookList = document.getElementsByClassName('book-card');
-  for (let book of bookList) {
-    if (book.todoId === id) {
-      return book;
+for (let i = 0; i < bgColor.length; i++) {
+  bgColor[i].style.backgroundColor = CARD_BGCOLOR[i];
+
+  bgColor[i].addEventListener('click', function (event) {
+    const clicked = document.querySelectorAll('.bg-color-opt-click');
+    if (clicked.length !== 0) {
+      clicked[0].classList.remove('bg-color-opt-click');
     }
-  }
+    event.target.classList.add('bg-color-opt-click');
+  });
 }
 
-function AddorEdit(e) {
-  if (!aside.classList.length) {
-    aside.classList.add('add-edit-open');
-    content.style.width = '132%';
-    addbtn.classList.add('rotate-add');
-    formArea.removeAttribute('hidden');
-  } else {
-    aside.classList.remove('add-edit-open');
-    addbtn.classList.remove('rotate-add');
-    content.style.width = '100%';
-    formArea.setAttribute('hidden', true);
-  }
-}
-const addbtn = document.getElementById('add-button');
-const aside = document.querySelector('aside');
-const content = document.getElementById('content');
-const editbtn = document.getElementById('edit-button');
-const formArea = document.getElementById('form-area');
-addbtn.addEventListener('click', AddorEdit);
-editbtn.addEventListener('click', AddorEdit);
+document.addEventListener('DOMContentLoaded', function () {
+  const submitForm /* HTMLFormElement */ = document.getElementById('form');
+
+  submitForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    addBookCard();
+  });
+});

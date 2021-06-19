@@ -10,17 +10,21 @@
   <body>
     <aside>
       <h3>Bookshelf <br />Apps</h3>
-      <input type="image" src="assets/plus.svg" alt="" width="45" id="add-button" />
+      <input type="image" src="assets/plus.svg" alt="" width="45" id="add-button" onclick="AddorEdit()" />
       <div id="form-area" hidden>
         <h1>Tambah atau Ubah Buku</h1>
         <form action="" id="form">
-          <input type="text" placeholder="Judul Buku" required />
-          <input type="text" placeholder="Nama Penulis" required />
-          <input type="text" placeholder="Tahun Terbit" required />
-          <label for="book-cover">Masukkan Cover Buku</label>
-          <input type="file" name="book-cover" id="book-cover" />
+          <input type="text" id="bookTitle" placeholder="Judul Buku" required />
+          <input type="text" id="authorName" placeholder="Nama Penulis" required />
+          <input type="text" id="releaseYear" placeholder="Tahun Terbit" required /><br />
+          <div class="finished-group">
+            <label for="finishedRead">Selesai Dibaca : </label>
+            <input type="checkbox" name="finishedRead" id="finishedRead" /><br />
+          </div>
+          <label for="bookCover">Masukkan Cover Buku</label>
+          <input type="file" name="book-cover" id="bookCover" />
           <div class="bg-color-group">
-            <div class="bg-color-opt"></div>
+            <div class="bg-color-opt bg-color-opt-click"></div>
             <div class="bg-color-opt"></div>
             <div class="bg-color-opt"></div>
             <div class="bg-color-opt"></div>
@@ -34,32 +38,17 @@
       <img src="assets/search.svg" alt="" width="20px" />
       <input type="text" name="search" id="search" placeholder="Cari Buku" />
       <div id="content">
-        <div class="book-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="book-list" id="unfinishedRead" ondrop="drop(event)" ondragover="allowDrop(event)">
           <h1>Belum Selesai Dibaca</h1>
-          <p class="void" hidden>Belum Ada Buku</p>
-
-          <div class="book-card" draggable="true" ondragstart="drag(event)">
-            <img src="assets/cover-book.jpg" alt="" width="167" height="250" />
-            <button id="remove-button"></button>
-            <button id="edit-button"></button>
-            <p id="book-title">Harry Potter and The Sorcerer’s Stone</p>
-            <p id="author-and-release">J.K, Rowling, 2002</p>
-          </div>
-          <div class="book-card" draggable="true" ondragstart="drag(event)">
-            <img src="assets/cover-book.jpg" alt="" width="167" height="250" />
-            <button id="remove-button"></button>
-            <button id="edit-button"></button>
-            <p id="book-title">Harry Potter and The Sorcerer’s Stone</p>
-            <p id="author-and-release">J.K, Rowling, 2002</p>
-          </div>
+          <p class="void">Belum Ada Buku</p>
         </div>
-
         <div class="book-list" ondrop="drop(event)" ondragover="allowDrop(event)">
           <h1>Selesai Dibaca</h1>
-          <!-- <p class="void">Belum Ada Buku</p> -->
+          <p class="void">Belum Ada Buku</p>
         </div>
       </div>
     </main>
+    <script src="js/dom.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
