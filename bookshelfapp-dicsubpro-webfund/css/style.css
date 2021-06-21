@@ -31,10 +31,6 @@ aside {
   flex-basis: 40%;
 }
 
-.rotate-add {
-  rotate: 45deg;
-}
-
 h3 {
   margin-top: 0;
   text-align: left;
@@ -196,7 +192,7 @@ label {
   transform: translateY(4px);
 }
 
-#form-area .bg-color-group {
+#form-area #bg-color-group {
   text-align: left;
   margin-left: 10%;
   margin-bottom: 5%;

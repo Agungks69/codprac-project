@@ -10,7 +10,7 @@
   <body>
     <aside>
       <h3>Bookshelf <br />Apps</h3>
-      <input type="image" src="assets/plus.svg" alt="" width="45" id="add-button" onclick="AddorEdit()" />
+      <input type="image" src="assets/plus.svg" alt="" width="45" id="add-button" onclick="formOpen()" />
       <div id="form-area" hidden>
         <h1>Tambah atau Ubah Buku</h1>
         <form action="" id="form">
@@ -22,8 +22,8 @@
             <input type="checkbox" name="finishedRead" id="finishedRead" /><br />
           </div>
           <label for="bookCover">Masukkan Cover Buku</label>
-          <input type="file" name="book-cover" id="bookCover" />
-          <div class="bg-color-group">
+          <input type="file" name="book-cover" id="bookCover" disabled />
+          <div id="bg-color-group">
             <div class="bg-color-opt bg-color-opt-click"></div>
             <div class="bg-color-opt"></div>
             <div class="bg-color-opt"></div>
@@ -38,16 +38,17 @@
       <img src="assets/search.svg" alt="" width="20px" />
       <input type="text" name="search" id="search" placeholder="Cari Buku" />
       <div id="content">
-        <div class="book-list" id="unfinishedRead" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="book-list" id="unfinishedReadBooks" ondrop="drop(event)" ondragover="allowDrop(event)">
           <h1>Belum Selesai Dibaca</h1>
           <p class="void">Belum Ada Buku</p>
         </div>
-        <div class="book-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="book-list" id="finishedReadBooks" ondrop="drop(event)" ondragover="allowDrop(event)">
           <h1>Selesai Dibaca</h1>
           <p class="void">Belum Ada Buku</p>
         </div>
       </div>
     </main>
+    <script src="js/data.js"></script>
     <script src="js/dom.js"></script>
     <script src="js/script.js"></script>
   </body>
