@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Iptek</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">My Iptek Shop</h2>
+          <p class="sub-heading">Web & Mobile</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 250K</h4>
+          <p class="item">Web</p>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 300K</h4>
+          <p class="item">Mobile</p>
+        </div>
+      </header>
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span><span></span><span></span>
+        </div>
+        <div class="brand"><h1>My Iptech</h1></div>
+        <ul class="menu-list">
+          <li><a href="Home">Home</a></li>
+          <li><a href="Products">Products</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Gallery">Gallery</a></li>
+        </ul>
+      </nav>
+      <section class="services">
+        <div class="service">
+          <div class="icon"></div>
+          <h3>Tutorial</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo itaque, nisi cumque error culpa cupiditate?</p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
