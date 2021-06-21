@@ -32,13 +32,13 @@ function updateDataToStorage() {
   }
 }
 
-function composeBookObject(title, author, year, finishedRead, cover, color) {
+function composeBookObject(title, author, year, isComplete, cover, color) {
   return {
     id: +new Date(),
     title,
     author,
     year,
-    finishedRead,
+    isComplete,
     cover,
     color,
   };
@@ -69,7 +69,7 @@ function refreshDataFromBooks() {
     const newBook = makeBookCard(book.title, book.author, book.year, book.cover, book.color);
     newBook[BOOK_ITEMID] = book.id;
 
-    if (book.finishedRead) {
+    if (book.isComplete) {
       listFinishedBook.append(newBook);
     } else {
       listUnfinishedBook.append(newBook);

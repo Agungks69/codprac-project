@@ -92,7 +92,7 @@ function openFormForEdit(book) {
   document.getElementById('bookTitle').value = bookItem.title;
   document.getElementById('authorName').value = bookItem.author;
   document.getElementById('releaseYear').value = bookItem.year;
-  document.getElementById('finishedRead').checked = bookItem.finishedRead;
+  document.getElementById('finishedRead').checked = bookItem.isComplete;
   changeColor(bookItem.color);
 
   if (!aside.classList.contains('add-edit-open')) {
@@ -130,7 +130,7 @@ function editBook(bookId) {
   books[findBookIndex(bookId)].title = document.getElementById('bookTitle').value;
   books[findBookIndex(bookId)].author = document.getElementById('authorName').value;
   books[findBookIndex(bookId)].year = document.getElementById('releaseYear').value;
-  books[findBookIndex(bookId)].finishedRead = document.getElementById('finishedRead').checked;
+  books[findBookIndex(bookId)].isComplete = document.getElementById('finishedRead').checked;
   const cardColor = document.getElementsByClassName('bg-color-opt');
   let color;
   for (let i = 0; i < CARD_BGCOLOR.length; i++) {
