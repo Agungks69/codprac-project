@@ -177,21 +177,61 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-  ev.dataTransfer.setData('text', ev.target.todoId);
+  ev.dataTransfer.setData('text', ev.target[BOOK_ITEMID]);
 }
 
 function drop(ev) {
   ev.preventDefault();
-  var data = ev.dataTransfer.getData('text');
-  // let book = saveData(data);
-  ev.target.appendChild(book);
+  const bookId = ev.dataTransfer.getData('text');
+  const bookPos = findBookIndex(+bookId);
+  if (ev.target.id === UNFINISHED_LIST_BOOK_ID) {
+    books[bookPos].isComplete = false;
+  } else if (ev.target.id === FINISHED_LIST_BOOK_ID) {
+    books[bookPos].isComplete = true;
+  }
+  updateDataToStorage();
+  location.reload();
 }
 
-// function saveData(id) {
-//   const bookList = document.getElementsByClassName('book-card');
-//   for (let book of bookList) {
-//     if (book.todoId === id) {
-//       return book;
-//     }
-//   }
-// }
+function bookSearch(ev) {
+  const listUnfinishedBook = document.getElementById(UNFINISHED_LIST_BOOK_ID);
+  const listFinishedBook = document.getElementById(FINISHED_LIST_BOOK_ID);
+  const word = ev.target.value.toLowerCase();
+  console.log(word);
+
+  const tempBook = [];
+  for (let book of books) {
+    if (!book.title.toLowerCase().includes(word)) {
+      tempBook.push(book);
+    }
+  }
+
+  for (let i = 2; i < listFinishedBook.children.length; i++) {
+    for (let book of tempBook) {
+      if (!book.isComplete) continue;
+      if (listFinishedBook.children[i][BOOK_ITEMID] === book.id) {
+        listFinishedBook.children[i].style.display = 'none';
+        break;
+      }
+      listFinishedBook.children[i].style.display = '';
+    }
+  }
+
+  for (let i = 2; i < listUnfinishedBook.children.length; i++) {
+    for (let book of tempBook) {
+      if (book.isComplete) continue;
+      if (listUnfinishedBook.children[i][BOOK_ITEMID] === book.id) {
+        listUnfinishedBook.children[i].style.display = 'none';
+        break;
+      }
+      listUnfinishedBook.children[i].style.display = '';
+    }
+  }
+
+  if (word === '') {
+    location.reload();
+    return;
+  }
+
+  console.log(tempBook);
+}

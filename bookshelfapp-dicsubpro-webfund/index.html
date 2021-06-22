@@ -16,7 +16,7 @@
         <form action="" id="form">
           <input type="text" id="bookTitle" placeholder="Judul Buku" required />
           <input type="text" id="authorName" placeholder="Nama Penulis" required />
-          <input type="text" id="releaseYear" placeholder="Tahun Terbit" required /><br />
+          <input type="text" id="releaseYear" placeholder="Tahun Terbit" pattern="^[0-9]*$" required /><br />
           <div class="finished-group">
             <label for="finishedRead">Selesai Dibaca : </label>
             <input type="checkbox" name="finishedRead" id="finishedRead" /><br />

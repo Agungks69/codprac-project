@@ -65,6 +65,7 @@ function findBookIndex(bookId) {
 function refreshDataFromBooks() {
   const listUnfinishedBook = document.getElementById(UNFINISHED_LIST_BOOK_ID);
   const listFinishedBook = document.getElementById(FINISHED_LIST_BOOK_ID);
+
   for (book of books) {
     const newBook = makeBookCard(book.title, book.author, book.year, book.cover, book.color);
     newBook[BOOK_ITEMID] = book.id;
