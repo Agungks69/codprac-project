@@ -1,0 +1,19 @@
+{
+  "name": "sa-music-ka",
+  "version": "1.0.0",
+  "description": "Web Streaming music (Sub Fund Front Dicoding)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agungks74/codprac-projects.git"
+  },
+  "author": "Agung Kurniawan Syahferdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agungks74/codprac-projects/issues"
+  },
+  "homepage": "https://github.com/agungks74/codprac-projects#readme"
+}
